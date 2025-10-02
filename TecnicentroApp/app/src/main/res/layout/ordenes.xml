@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listaOrdenes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+    <!-- Encabezado -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bs"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Listado de Órdenes de Servicio"
+        style="@style/Titulo"
+        android:textStyle="bold" />
+
+    <!-- Botón Crear Orden -->
+    <Button
+        android:id="@+id/btnCrearOrden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        style="@style/BotonAgregar"
+        android:text="Crear Orden"
+        android:textColor="@color/black" />
+
+    <!-- Lista de órdenes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerOrdenes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="8dp" />
+
+</LinearLayout>

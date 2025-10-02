@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/agregarClientes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Barra superior -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bs"
+        android:gravity="center"
+        android:text="Nuevo Cliente"
+        style="@style/Titulo"
+        android:textStyle="bold" />
+
+    <!-- Contenido scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Identificación -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                style="@style/Texto1"
+                android:text="Identificación:"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/etIdentificacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:textSize="16sp"
+                style="@style/Texto2"
+                android:maxLength="13"
+                android:textColor="@color/black"
+                android:inputType="number" />
+
+            <!-- Nombre -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                style="@style/Texto1"
+                android:textColor="@color/black"
+                android:text="Nombre:" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                style="@style/Texto2"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp"
+                android:inputType="textPersonName" />
+
+            <!-- Dirección -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                style="@style/Texto1"
+                android:text="Dirección:" />
+
+            <EditText
+                android:id="@+id/etDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:textSize="16sp"
+                style="@style/Texto2"
+                android:textColor="@color/black"
+                android:inputType="textPostalAddress" />
+
+            <!-- Teléfono -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                style="@style/Texto1"
+                android:textColor="@color/black"
+                android:text="Teléfono:" />
+
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black"
+                style="@style/Texto2"
+                android:maxLength="10"
+                android:inputType="phone" />
+
+            <!-- Tipo de cliente -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                style="@style/Texto1"
+                android:text="Tipo cliente:" />
+
+            <Spinner
+                android:id="@+id/spTipoCliente"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                style="@style/Texto2"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Espaciador para que el botón no tape campos en pantallas pequeñas -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón guardar (abajo a la derecha) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="16dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/eliminar"
+            android:text="Cancelar"
+            style="@style/BotonRegresar"
+            android:id="@+id/regresarCliente"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/btnGuardarCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            style="@style/BotonGuardar"
+            android:backgroundTint="@color/guardar"
+            android:text="Guardar"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

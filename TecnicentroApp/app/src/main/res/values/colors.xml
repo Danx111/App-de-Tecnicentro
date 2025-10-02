@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fondo5">#552f39</color>
+    <color name="fondo4">#5b465d</color>
+    <color name="fondo3">#9a5b5f</color>
+    <color name="fondo2">#d78381</color>
+    <color name="barraSuperior">#7be495</color>
+    <color name="btn">#4c956c</color>
+    <color name="bs">#359d9e</color>
+    <color name="bMain">#b6e9eb</color>
+    <color name="bEditar">#A7E1E2</color>
+    <color name="eliminar">#F87C63</color>
+    <color name="guardar">#85D5D6</color>
+    <color name="gris">#E3E3E3</color>
+
+</resources>

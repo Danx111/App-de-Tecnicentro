@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemOS"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="6dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Cliente -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                style="@style/Texto1"
+                android:text="Cliente: " />
+
+            <TextView
+                android:id="@+id/tvCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Texto2"
+                android:text="Tech solution SA"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                style="@style/Texto1"
+                android:text="Fecha: " />
+            <TextView
+                android:id="@+id/tvFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Texto2"
+                android:text="01/07/2025" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                style="@style/Texto1"
+                android:text="Placa: " />
+            <TextView
+                android:id="@+id/tvPlaca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Texto2"
+                android:text="ABC-1234" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                style="@style/Texto1"
+                android:text="Total a pagar: " />
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Texto2"
+                android:text="$444" />
+        </LinearLayout>
+        <!-- Botón Más detalle -->
+        <Button
+            android:id="@+id/btnDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/BotonConsultar"
+            android:text="Más detalle"
+             />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

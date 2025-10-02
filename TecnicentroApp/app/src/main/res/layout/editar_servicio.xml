@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editarServicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Barra superior -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bs"
+        android:gravity="center"
+        android:text="Editar Servicio"
+        style="@style/Titulo"
+        android:textStyle="bold" />
+
+    <!-- Contenido scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    style="@style/Texto1"
+                    android:text="Nombre:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nombreServicio"
+                    style="@style/Texto2"
+                    android:text="Buuuu" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    style="@style/Texto1"
+                    android:text="Precio actual:"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etPrecioActual"
+                    android:text="jfe"
+                    android:textSize="16sp"
+                    style="@style/Texto2"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                style="@style/Texto1"
+                android:text="Nuevo Precio:" />
+
+            <EditText
+                android:id="@+id/etNuevoPrecioSer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Ej. 10.90"
+                style="@style/Texto2"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:inputType="numberDecimal" />
+
+            <!-- Espaciador para que el botón no tape campos en pantallas pequeñas -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón guardar (abajo a la derecha) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="16dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/regresarServicio1"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/eliminar"
+            android:text="Cancelar"
+            android:layout_weight="1"
+            style="@style/BotonRegresar"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/btnGuardarPrecioNuevoSer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/guardar"
+            android:text="Guardar"
+            android:layout_weight="1"
+            style="@style/BotonGuardar"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

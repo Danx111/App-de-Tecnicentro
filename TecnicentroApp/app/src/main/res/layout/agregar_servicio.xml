@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/agregarServicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Barra superior -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bs"
+        android:gravity="center"
+        android:text="Nuevo Servicio"
+        style="@style/Titulo"
+        android:textStyle="bold" />
+
+    <!-- Contenido scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Nombre -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                style="@style/Texto1"
+                android:text="Nombre:" />
+
+            <EditText
+                android:id="@+id/etNombreServ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                style="@style/Texto2"
+                android:inputType="textPersonName" />
+
+
+            <!-- Teléfono -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Texto1"
+                android:text="Precio:" />
+
+            <EditText
+                android:id="@+id/etPrecioServ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Ej. 20.78"
+                style="@style/Texto2"
+                android:inputType="numberDecimal" />
+
+
+            <!-- Espaciador para que el botón no tape campos en pantallas pequeñas -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón guardar (abajo a la derecha) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="16dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/regresarServicio2"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/eliminar"
+            android:text="Cancelar"
+            android:layout_weight="1"
+            style="@style/BotonRegresar"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/btnGuardarServicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:backgroundTint="@color/guardar"
+            android:text="Guardar"
+            android:layout_weight="1"
+            style="@style/BotonGuardar"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

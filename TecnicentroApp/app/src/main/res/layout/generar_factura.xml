@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/generarFacturaPantalla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bs"
+        android:gravity="center"
+        android:text="Generar Factura"
+        style="@style/Titulo"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- O seleccionar cliente -->
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/Texto1"
+                android:layout_height="wrap_content"
+                android:text="Seleccione la empresa:" />
+
+            <Spinner
+                android:id="@+id/spEmpresas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" />
+
+            <!-- O seleccionar cliente -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Texto1"
+                android:text="Año:" />
+
+            <EditText
+                android:id="@+id/etAnioFact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Ej. 2025"
+                style="@style/Texto2"
+                android:maxLength="4"
+                android:inputType="number" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Texto1"
+                android:text="Mes:" />
+
+            <Spinner
+                android:id="@+id/spMesFact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" />
+
+
+            <!-- Guardar Orden -->
+            <Button
+                android:id="@+id/btnGenerarFac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                style="@style/BotonAgregar"
+                android:layout_gravity="center"
+                android:text="Generar Factura"
+                />
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detalle de servicios"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:background="@color/bs"
+                style="@style/Texto1"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="12dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvServicios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="ifContentScrolls"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Texto1"
+                android:text="Subtotal: "/>
+
+            <TextView
+                style="@style/Texto2"
+                android:id="@+id/SubtotalFactura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="$0.00" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Texto1"
+                android:text="Cargo por prioridad: "/>
+
+            <TextView
+                style="@style/Texto2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="$50.0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Texto1"
+                android:text="Total: "/>
+
+            <TextView
+                style="@style/Texto2"
+                android:id="@+id/totalfactura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="$0.00" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/regresarFactura"
+                style="@style/BotonRegresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancelar"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btnGuardarFactura"
+                style="@style/BotonGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Guardar"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

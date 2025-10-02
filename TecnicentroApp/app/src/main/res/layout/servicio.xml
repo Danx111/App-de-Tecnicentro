@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/servicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bs"
+        android:textColor="@color/white"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Listado de Servicios"
+        style="@style/Titulo"
+        android:textStyle="bold" />
+
+    <!-- Botón agregar servicio -->
+    <Button
+        android:id="@+id/btnAgregarServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        style="@style/BotonAgregar"
+        android:text="Agregar Servicio"
+        android:textColor="@color/black" />
+
+    <!-- Lista de servicios -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerServicios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false" />
+</LinearLayout>

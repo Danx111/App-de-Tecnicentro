@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/agregarProveedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Barra superior -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bs"
+        android:gravity="center"
+        android:text="Nuevo Proveedor"
+        style="@style/Titulo"
+        android:textStyle="bold" />
+
+    <!-- Contenido scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Identificación -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identificación:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:id="@+id/etIdentificacionPro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                style="@style/Texto2"
+                android:maxLength="13"
+                android:inputType="number" />
+
+            <!-- Nombre -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:text="Nombre:" />
+
+            <EditText
+                android:id="@+id/etNombrePro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Texto2"
+                android:layout_marginBottom="12dp"
+                android:inputType="textPersonName" />
+
+            <!-- Dirección -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:text="Descripción:" />
+
+            <EditText
+                android:id="@+id/etDescripcionPro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                style="@style/Texto2"
+                android:inputType="text" />
+
+            <!-- Teléfono -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:text="Teléfono:" />
+
+            <EditText
+                android:id="@+id/etTelefonoPro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                style="@style/Texto2"
+                android:maxLength="10"
+                android:inputType="phone" />
+
+            <!-- Espaciador para que el botón no tape campos en pantallas pequeñas -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón guardar (abajo a la derecha) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="16dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/regresarProveedor1"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/eliminar"
+            android:text="Cancelar"
+            android:layout_weight="1"
+            style="@style/BotonRegresar"/>
+        <Button
+            android:id="@+id/btnGuardarProveedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/guardar"
+            android:text="Guardar"
+            style="@style/BotonGuardar" />
+    </LinearLayout>
+
+</LinearLayout>

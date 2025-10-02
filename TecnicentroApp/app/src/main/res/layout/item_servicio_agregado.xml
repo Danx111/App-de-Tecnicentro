@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginHorizontal="2dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/tvNombreServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alineación"
+        style="@style/Texto1"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            style="@style/Texto1"
+            android:text="Cantidad: " />
+        <TextView
+            android:id="@+id/tvCantidad"
+            android:layout_width="wrap_content"
+            style="@style/Texto2"
+            android:layout_height="wrap_content"
+            android:text="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            style="@style/Texto1"
+            android:text="Costo unitario: " />
+        <TextView
+            android:id="@+id/tvCostoUnitario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Texto2"
+            android:text="$51" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            style="@style/Texto1"
+            android:text="Subtotal: " />
+        <TextView
+            android:id="@+id/tvSubtotal"
+            android:layout_width="wrap_content"
+            style="@style/Texto2"
+            android:layout_height="wrap_content"
+            android:text="$0.00" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">TecnicentroApp</string>
+
+    <string-array name="tipos_cliente">
+        <item>Seleccione</item>
+        <item>Personal</item>
+        <item>Empresarial</item>
+    </string-array>
+
+    <string-array name="tipoVehiculo">
+        <item>Bus</item>
+        <item>Automóvil</item>
+        <item>Motocicleta</item>
+    </string-array>
+
+    <string-array name="meses_array">
+        <item>Seleccione</item>
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+
+</resources>

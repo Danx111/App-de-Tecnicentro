@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/pantallaTecnicos"
+    android:background="#F0F2F5">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Listado de Tecnicos"
+        android:background="@color/bs"
+        android:textColor="@color/white"
+        style="@style/Titulo"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Botón agregar tecnico -->
+    <Button
+        android:id="@+id/btnAgregarTecnico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Tecnico"
+        style="@style/BotonAgregar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Lista de tecnicos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTecnicos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false" />
+</LinearLayout>

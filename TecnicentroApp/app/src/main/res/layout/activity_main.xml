@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/agregarProveedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Encabezado -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/bs"
+            android:padding="12dp"
+            android:text="Bienvenido a Tecnicentro"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Contenedor de botones -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:rowOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <!-- Clientes -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:background="@color/bMain"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnClientes"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Clientes"
+                    android:src="@drawable/ic_clientes" />
+
+                <TextView
+                    android:layout_width="107dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:text="Clientes"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Proveedores -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:background="@color/bMain"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnProveedores"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Proveedores"
+                    android:src="@drawable/ic_proveedores" />
+
+                <TextView
+                    android:layout_width="107dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Proveedores"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Técnicos -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:background="@color/bMain"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnTecnicos"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Técnicos"
+                    android:src="@drawable/ic_tecnicos" />
+
+                <TextView
+                    android:layout_width="107dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Técnicos"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Servicios -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:background="@color/bMain"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnServicios"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Servicios"
+                    android:src="@drawable/ic_servicios" />
+
+                <TextView
+                    android:layout_width="107dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Servicios"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Órdenes de Servicio -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:background="@color/bMain"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnOrdenesServicio"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Órdenes"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_ordenes" />
+
+                <TextView
+                    android:layout_width="107dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Órdenes de Servicio"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Facturas -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:background="@color/bMain"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnFacturas"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Facturas"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_facturas" />
+
+                <TextView
+                    android:layout_width="107dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Facturas"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Reportes por Servicio -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:background="@color/bMain"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnReporteServicio"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Reporte Servicio"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_reporte_servicio" />
+
+                <TextView
+                    android:layout_width="107dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Reportes por servicio"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Reportes por Técnico -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:background="@color/bMain"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnReporteTecnicos"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Reporte Técnico"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_reporte_tecnico" />
+
+                <TextView
+                    android:layout_width="107dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Reportes por técnicos"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
